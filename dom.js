@@ -10,7 +10,7 @@
 
 //document.all[8].textContent="Drugi naslov"
 
-console.log(document.forms);
+/*console.log(document.forms);
 console.log(document.forms[0]);
 
 console.log(document.getElementsByClassName("list-item"));
@@ -46,3 +46,49 @@ drugiLink.style.backgroundColor="red"
 let lista=document.querySelectorAll(".list-item")
 console.log(lista)
 lista[2].textContent="ne znam sta"
+*/
+
+//parentNode
+let listItem=document.getElementById("items")
+console.log(listItem.parentNode)
+
+//parentElement
+console.log(listItem.parentElement)
+
+listItem.parentElement.style.background="lime"
+
+//childNodes
+
+console.log(listItem.childNodes)
+listItem.childNodes[1].style.backgroundColor="green"
+listItem.childNodes[2].style.background="green"
+console.log(listItem.childNodes[0])
+
+//children(Element)
+
+console.log(listItem.children)
+listItem.children[0].style.background="green"
+
+//firstChild(node)
+
+console.log(listItem.firstChild)
+
+//firstElementChild
+
+console.log(listItem.firstElementChild)
+
+//lastChild
+//lastElementChild
+
+//sibling
+console.log(listItem.previousElementSibling)
+listItems.previousElementSibling.style.backgroundColor="brown"
+console.log(listItem.nextElementSibling)
+listItem.nextElementSibling.style.backgroundColor="red"
+
+let lista=document.querySelectorAll(".list-item")
+console,log(lista)
+lista[1].previousElementSibling.style.backgroundColor="blue"
+lista[1].nextElementSibling.style.backgroundColor="lightblue"
+
+lista[1].parentElement.parentElement.style.backgroundColor="orange"
